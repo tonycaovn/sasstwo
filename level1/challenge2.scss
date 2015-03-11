@@ -1,0 +1,9 @@
+@mixin assemble($side, $bg: #fff, $pad: 10px)
+  background: $bg
+  border-#{$side}: 1px solid #ccc
+  padding: $pad
+
+.factory
+  @include assemble(left)
+.highrise
+  @include assemble(right, #797979, 20px)

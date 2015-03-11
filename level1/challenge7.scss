@@ -1,0 +1,10 @@
+$crew: judy phillip william emily;
+
+.worksite {
+  @if length($crew) < 5 {
+    color: green;
+  }
+  @else {
+    color: red;
+  }
+}

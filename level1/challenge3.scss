@@ -1,0 +1,8 @@
+$surveyors: judy phillip;
+$architects: william emily;
+
+@each $name in $surveyors {
+  .team-#{$name} {
+    background: url("../images/#{$name}.jpg");
+  }
+}

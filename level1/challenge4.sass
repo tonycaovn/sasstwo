@@ -1,0 +1,10 @@
+$surveyors: judy phillip;
+$architects: william emily;
+$crew: join($surveyors, $architects);
+
+@each $name in $crew {
+  $index:index($crew,$name);
+  .team-#{$index} {
+    background: url("../images/#{$name}.jpg");
+  }
+}

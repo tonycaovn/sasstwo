@@ -1,0 +1,6 @@
+.socket {
+  background: #333333;
+  &:hover {
+    background: darken(#333333, 30%);
+  }
+}
