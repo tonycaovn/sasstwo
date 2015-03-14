@@ -1,0 +1,10 @@
+@import "compass";
+
+.socket {
+  border-radius: 50%;
+  height: 200px;
+  width: 200px;
+  &.is-active {
+    @include transform(rotate, 45deg);
+  }
+}

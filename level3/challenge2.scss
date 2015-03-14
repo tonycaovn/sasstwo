@@ -1,0 +1,8 @@
+@import "compass";
+
+.socket {
+  background: #333333;
+  &:hover {
+    background: scale-lightness(#333333,-30%);
+  }
+}

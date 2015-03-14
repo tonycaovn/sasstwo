@@ -1,0 +1,10 @@
+@import "compass/layout";
+
+.bio {
+  position: relative;
+  &:after {
+    background: rgba(black, 0.3);
+    content: "";
+    @include stretch(10px, 5px, 10px, 5px);
+  }
+}

@@ -1,0 +1,11 @@
+@import "compass";
+
+@mixin borders($side, $style) {
+  $op: opposite-position($side);
+  border-#{$op}: $style;
+  border-#{$side}: $style;
+}
+
+.complex {
+  @include borders(left, 10px solid #cccccc);
+}

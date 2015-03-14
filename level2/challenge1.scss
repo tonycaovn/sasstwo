@@ -1,0 +1,10 @@
+@import "compass";
+
+a {
+  @include transition(color 0.2s ease-in-out);
+  color: blue;
+  &:hover,
+  &:focus {
+    color: red;
+  }
+}
